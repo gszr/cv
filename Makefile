@@ -10,7 +10,7 @@ $(proj).pdf: $(proj).tex $(proj).bib $(aux).tex
 	xelatex $(proj)
 
 clean:
-	-rm*.pdf
+	#-rm *.pdf
 	-rm *.aux
 	-rm *.log
 	-rm *.out
