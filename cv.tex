@@ -27,15 +27,15 @@
 \renewcommand*{\@biblabel}[1]{\hfill[C#1]}
 \makeatother
 
+\pagestyle{empty}
+
 \include{functions}
 
 \begin{document}
 
-\pagestyle{empty}
-
 \font\fb=''[cmr10]''
 
-\par{\centering {\Huge {Guilherme Salazar}}\bigskip\par}
+\par{\centering {\Huge {Guilherme Salazar}}\bigskip\par\vspace{8ex}}
 
 % \section{Objective}
 % To acquire a full-time summer internship position in the field of computer science.
@@ -50,47 +50,55 @@
 \end{tabular}
 
 \section{Education}
-\begin{tabular}{r p{12cm}}
+\begin{tabular}{r|p{11cm}}
 
-  \textsc{2010-2011} & (changed major) Bachelor's in \textsc{Software Engineering}\\ &
+  \textsc{2010---2011} & (changed major) Bachelor's in \textsc{Software Engineering}\\ &
   \emph{Instituto de Informática}\\ &
   \textbf{Universidade Federal de Goiás, Brazil}
-  \\&\\
-  \textsc{2011-Present} & Bachelor's in \textsc{Computer Science}\\ &
+  \\\multicolumn{2}{c}{} \\
+
+  \textsc{2011---2015} & Bachelor's in \textsc{Computer Science}\\ &
   \emph{Instituto de Informática}\\ &
   \textbf{Universidade Federal de Goiás, Brazil}
-  \\&\\
-  \textsc{2012-2013} & Non-Degree Program\\ &
+  \\\multicolumn{2}{c}{} \\
+
+  \textsc{2012---2013} & Non-Degree Program\\ &
   \emph{College of Engineering \& Computing}\\ &
   \textbf{University of South Carolina, United States}
+  \\\multicolumn{2}{c}{} \\
 
 \end{tabular}
 
 \section{Supplemental Courses}
-\begin{tabular}{r p{12cm}}
-  \textsc{2010-2010} & Mini course on Aggregation of Software Engineering Experiments\\ &
+\begin{tabular}{r|p{11cm}}
+  \textsc{2010---2010} & Mini course on Aggregation of Software Engineering Experiments\\ &
   \emph{Instituto de Informática} \\ &
   \emph{Universidade Federal de Goiás}\\ &
   Hour load: 8 hours
-  \\&\\
-  \textsc{2010-2010} & Mini course on Introduction to Metrics and Measurement of Software\\ &
+  \\\multicolumn{2}{c}{} \\
+
+  \textsc{2010---2010} & Mini course on Introduction to Metrics and Measurement of Software\\ &
   \emph{Instituto de Informática} \\ &
   \emph{Universidade Federal de Goiás}\\ &
   Hour load: 8 hours
-  \\&\\
-  \textsc{2010-2010} & Mini course on Parallel Programming in CUDA\\ &
+  \\\multicolumn{2}{c}{} \\
+
+  \textsc{2010---2010} & Mini course on Parallel Programming in CUDA\\ &
   \emph{Instituto de Informática} \\ &
   \emph{Universidade Federal de Goiás}\\ &
   Hour load: 10 hours
-  \\&\\
-  \textsc{2010-2011} & English Language Course\\ &
+  \\\multicolumn{2}{c}{} \\
+
+  \textsc{2010---2011} & English Language Course\\ &
   \emph{Cultural Norte-Americano} \\ &
   Hour load: 120 hours
-  \\&\\
-  \textsc{2012-2012} & Summer Pre-Academic Program\\ &
+  \\\multicolumn{2}{c}{} \\
+
+  \textsc{2012---2012} & Summer Pre-Academic Program\\ &
   \emph{College of Health \& Human Services}\\ &
   \emph{University of North Carolina}\\ &
   Hour load: 115 hours
+  \\\multicolumn{2}{c}{} \\
 \end{tabular}
 
 \pagebreak
@@ -100,24 +108,26 @@
 
   \textsc{2011---2011}
   & Teaching Assistant --- \emph{Software Construction}\\
-  &\emph{Universidade Federal de Goiás}\\
-  &\emph{Advisor: Dr. Fabbrizio Soares}
+  &\emph{Instituto de Informática, Universidade Federal de Goiás}\\
+  &\emph{Dr. Fabbrizio Soares}
   \\\multicolumn{2}{c}{} \\
 
   \textsc{2013---2013}
   & Software Developer\\
-  &\emph{University of South Carolina}\\
-  &\emph{Advisor: Dr. \href{http://jmvidal.cse.sc.edu}{José M. Vidal}}\\
-  &\footnotesize{Development of an Electronic Health Records application in the Google App Engine platform.}
+  &\emph{College of Engineering \& Computing, University of South Carolina}\\
+  &\footnotesize{Development of an Electronic Health Records application in the Google App Engine platform.}\\
+  &\emph{Dr. \href{http://jmvidal.cse.sc.edu}{José M. Vidal}}
   \\\multicolumn{2}{c}{} \\
 
   \textsc{2014---2014}
   & Teaching Assistant --- \emph{Operating Systems}\\
-  &\emph{Universidade Federal de Goiás}\\
-  &\emph{Advisor: Dr. Ricardo Rocha}
+  &\emph{Instituto de Informática, Universidade Federal de Goiás}\\
+  &\emph{Dr. Ricardo Rocha}
   \\\multicolumn{2}{c}{} \\
 
 \end{tabular}
+
+%\setlength{\parindent}{1cm}
 
 \section{Research Experience}
 \begin{tabular}{r|p{11cm}}
@@ -126,10 +136,10 @@
   & Research Assistant \\
   &\emph{Universidade Federal de Goiás}\\
   &\emph{Supporting the Development of Concurrent/Distributed Systems}\\
-  &\footnotesize{Study of alternative models and mechanisms of coordination and communication in event-driven
+  &\indent \footnotesize{Study of alternative models and mechanisms of coordination and communication in event-driven
     concurrent/distributed systems, as well as investigation of the contribution of dynamic programming 
     languages (e.g., Lua) in the development of higher-level concurrency abstractions.}\\
-  &\emph{Worked under advisement of Dr. \href{http://inf.ufg.br/~brunoos/}{Bruno O. Silvestre}}
+  &\emph{Dr. \href{http://inf.ufg.br/~brunoos/}{Bruno O. Silvestre}}
   \\\multicolumn{2}{c}{} \\
 
   \textsc{2011---2012}
@@ -140,12 +150,10 @@
     implementation, computation, and communication for the viabilization of smart cities. In particular, my main
     task was to study, experiment, and evaluate implementations of the IP stack for low power devices (i.e., 
     wireless sensor network nodes).}\\
-  &\emph{Worked under advisement of Dr. \href{http://inf.ufg.br/~brunoos/}{Bruno O. Silvestre}}
+  &\emph{Dr. \href{http://inf.ufg.br/~brunoos/}{Bruno O. Silvestre}}
   \\\multicolumn{2}{c}{} \\
 
 \end{tabular}
-
-\pagebreak
 
 \nocite{salazar:1}
 
@@ -153,17 +161,31 @@
 \bibliography{cv}
 \bibliographystyle{plainyr-rev}
 
-\section{Presentations}
-\begin{enumerate}
-  \renewcommand{\labelenumi}{[P\arabic{enumi}] }
-\item \emph{Proposta de um Modelo para o Processamento de Eventos Concorrentes no ALua}. Encontro Anual de Computação, Universidade Federal de Goiás. October 26, 2011.\\
-\end{enumerate}
+%% \section{Presentations}
+%% \begin{enumerate}
+%%   \renewcommand{\labelenumi}{[P\arabic{enumi}] }
+%% \item \emph{Proposta de um Modelo para o Processamento de Eventos Concorrentes no ALua}. Encontro Anual de Computação, Universidade Federal de Goiás. October 26, 2011.\\
+%% \end{enumerate}
 
 \section{Honors/Awards}
-\begin{tabular}{rll}
-  2011 & Best Paper Award, Encontro Anual de Computação, Universidade Federal de Goiás.\\
-  2012 & Scholarship Recipient, Ministry of Education -- Government of Brazil\\
+\begin{tabular}{r|p{11cm}}
+  \textsc{2011}
+  & Best Paper Award\\
+  & Encontro Anual de Computação, Universidade Federal de Goiás.\\
+  \multicolumn{2}{c}{}\\
+
+  \textsc{2012}
+  & Study Abroad Scholarship Recipient\\
+  & Ministry of Education, Government of Brazil\\
+  \multicolumn{2}{c}{}\\
+
+  \textsc{2012---2013}
+  & Dean's Honor List\\
+  & College of Engineering \& Computing, University of South Carolina\\
+  \multicolumn{2}{c}{}\\
 \end{tabular}
+
+\pagebreak
 
 \section{Academic Societies}
 

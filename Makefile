@@ -1,5 +1,6 @@
-proj=cv
-aux=functions
+proj	:= cv
+aux	:= functions
+rm	:= rm -rf
 
 all: $(proj).pdf
 
@@ -10,9 +11,4 @@ $(proj).pdf: $(proj).tex $(proj).bib $(aux).tex
 	xelatex $(proj)
 
 clean:
-	#-rm *.pdf
-	-rm *.aux
-	-rm *.log
-	-rm *.out
-	-rm *.blg
-	-rm *.bbl
+	-$(rm) *.pdf *.aux *.log *.out *.blg *.bbl
