@@ -1,12 +1,9 @@
 \documentclass[a4paper,10pt]{article}
 
-\usepackage{marvosym}
 \usepackage{fontspec}
-\usepackage{xunicode,xltxtra,url,parskip}
 \RequirePackage{color,graphicx}
 \usepackage[usenames,dvipsnames]{xcolor}
 \usepackage[big]{layaureo}
-% \usepackage{fullpage}
 \usepackage{supertabular}
 \usepackage{titlesec}
 \usepackage{multicol}
@@ -18,12 +15,7 @@
 \usepackage[absolute]{textpos}
 \usepackage{enumitem}
 \usepackage[normalem]{ulem}
-% \renewcommand{\labelitemi}{\textcolor{lightg}{\symbol{"00BB}}}
-
-% Prefixes bibtex output with "C" (for conference)
-\makeatletter
-\renewcommand*{\@biblabel}[1]{\hfill[C#1]}
-\makeatother
+\usepackage{calc}
 
 \pagestyle{empty}
 
@@ -33,32 +25,36 @@
 
 \font\fb=''[cmr10]''
 
-\par{\centering {\Huge\uline{{Guilherme Salazar}}}\bigskip\par\vspace{8ex}}
+\par{\center{\Huge\uline{{Guilherme Salazar}}}\bigskip\par\vspace{8ex}}
 
 \section{Personal}
 
-\begin{tabular}{r p{3.5in}}
-  \textsc{Birth:} & 13 September 1991 \hspace{0.5em}---\hspace{0.5em} Goiânia, Goiás, Brazil\\
-  % \textsc{Phone:}     & 803-269-5858\\
-  \textsc{email:}     & \href{mailto:gmesalazar@gmail.com}{gmesalazar@gmail.com} \\
-  \textsc{GitHub:} & \href{https://www.github.com/gmesalazar/}
-  					{https://www.github.com/gmesalazar}\\
+\begin{tabular}{l@{\hskip 0.2cm}l}
+  Born & \texttt{on} Sep 13, 1991 \\
+       & \texttt{in} Goiânia, Brazil \\
+  Code & \texttt{at} \href{https://www.github.com/salazar/}
+                          {GitHub.com/salazar} \\
+  Page & \texttt{at} \href{https://www.netbsd.org/~salazar}
+                          {NetBSD.org/\textasciitilde salazar} \\
+  Mail & \texttt{at} \href{mailto:salazar@NetBSD.org}
+                          {salazar@NetBSD.org} 
+ 
 \end{tabular}
 
 \section{Education}
 \begin{tabular}{r|p{11cm}}
 
-  \textsc{Aug $'$12---Jul $'$13} & Computer Science, Visiting\\ &
+  \textsc{Aug '12--Jul '13} & Computer Science, Visiting\\ &
   \emph{College of Engineering \& Computing}\\ &
   \textbf{University of South Carolina, United States}
   \\\multicolumn{2}{c}{} \\
 
-  \textsc{Aug $'$11---Jul $'$16} & Computer Science, B.Sc\\ &
+  \textsc{Aug '11--Jul '16} & Computer Science, B.Sc\\ &
   \emph{Instituto de Informática}\\ &
   \textbf{Universidade Federal de Goiás, Brazil}
   \\\multicolumn{2}{c}{} \\
 
-  \textsc{Mar $'$10---Aug $'$11} & Software Engineering, Got too bored and moved to CS :)\\ &
+  \textsc{Mar '10--Aug '11} & Software Engineering, Dropped \\ &
   \emph{Instituto de Informática}\\ &
   \textbf{Universidade Federal de Goiás, Brazil}
   \\\multicolumn{2}{c}{} \\
@@ -68,30 +64,30 @@
 \section{Courses}
 \begin{tabular}{r|p{11cm}}
 
-  \textsc{Jul---Aug $'$12} & Summer Pre-Academic Program\\ &
+  \textsc{Jul--Aug '12} & Summer Pre-Academic Program\\ &
   \emph{College of Health \& Human Services}\\ &
   \emph{University of North Carolina}\\ &
   Hour load: 115 hours
   \\\multicolumn{2}{c}{} \\
 
-  \textsc{Jan $'$10--- Jul $'$11} & English Language Course\\ &
+  \textsc{Jan '10--Jul '11} & English Language Course\\ &
   \emph{Cultural Norte-Americano} \\ &
   Hour load: 120 hours
   \\\multicolumn{2}{c}{} \\
 
-  \textsc{Oct $'$10} & Aggregation of Software Engineering Experiments\\ &
+  \textsc{Oct '10} & Aggregation of Software Engineering Experiments\\ &
   \emph{Instituto de Informática} \\ &
   \emph{Universidade Federal de Goiás}\\ &
   Hour load: 8 hours
   \\\multicolumn{2}{c}{} \\
 
-  \textsc{Oct $'$10} & Introduction to Metrics and Measurement of Software\\ &
+  \textsc{Oct '10} & Introduction to Metrics and Measurement of Software\\ &
   \emph{Instituto de Informática} \\ &
   \emph{Universidade Federal de Goiás}\\ &
   Hour load: 8 hours
   \\\multicolumn{2}{c}{} \\
 
-  \textsc{Oct $'$10} & Parallel Programming in CUDA\\ &
+  \textsc{Oct '10} & Parallel Programming in CUDA\\ &
   \emph{Instituto de Informática} \\ &
   \emph{Universidade Federal de Goiás}\\ &
   Hour load: 10 hours
@@ -101,106 +97,97 @@
 
 \pagebreak
 
-\section{Work Experience}
+\section{Work}
 \begin{tabular}{r|p{11cm}}
 
-  \textsc{Dec $'$15---Cur}
-  & Volunteer Developer\\
+  \textsc{Dec '15--Cur}
+  & Programmer \\
   &\emph{The NetBSD Foundation}\\
-  &\emph{\footnotesize{Works with kernel Lua, the port of the Lua language to
-  						kernel space; currently, aims to bring user level
-						Lua standard liraries to kernel space}}
+  &\emph{\footnotesize{Working with kernel Lua, the port of the Lua language to
+          kernel space; currently, aims to bring user level Lua standard liraries 
+          to kernel space and help developing new scenarios of use for kernel 
+          Lua}}
   \\\multicolumn{2}{c}{} \\
   
-  \textsc{May---Aug $'$15}
-  & Software Developer\\
+  \textsc{May--Aug '15}
+  & Programmer \\
   &\emph{Google Summer of Code, Google Inc., LabLua}\\
   &\emph{\footnotesize{\href{https://www.google-melange.com/gsoc/project/details/google/gsoc2015/gmesalazar/5741031244955648}{Port Lua test suite to the NetBSD kernel}}}\\
-  &\emph{Under Lourival Vieira Neto}
+  &\emph{Under Lourival Neto}
   \\\multicolumn{2}{c}{} \\
 
-  \textsc{Mar---Jul $'$15}
-  & Teaching Assistant --- \emph{Formal Languages and Automata}\\
-  &\emph{Instituto de Informática, Universidade Federal de Goiás}\\
-  &\emph{Under Dr. {Márcia Cappelle}}
+  \textsc{Mar--Jul '15}
+  & Teaching Assistant\\
+  &\emph{Instituto de nformática, Universidade Federal de Goiás}\\
+  &\emph{\footnotesize{Formal Languages and Automata Theory}} \\
+  &\emph{Under Dr. {Márcia Cappelle}} 
   \\\multicolumn{2}{c}{} \\
 
-  \textsc{Mar---Jul $'$14}
-  & Teaching Assistant --- \emph{Operating Systems}\\
+  \textsc{Mar--Jul '14}
+  & Teaching Assistant \\
   &\emph{Instituto de Informática, Universidade Federal de Goiás}\\
+  &\emph{\footnotesize{Operating Systems}} \\
   &\emph{Under Dr. \href{http://inf.ufg.br/~ricardo/}{Ricardo Rocha}}
   \\\multicolumn{2}{c}{} \\
 
-  \textsc{Jan---Jul $'$13}
-  & Software Developer\\
+  \textsc{Jan--Jul '13}
+  & Programmer \\
   &\emph{College of Engineering \& Computing, University of South Carolina}\\
   &\footnotesize{Development of a GAE app for USC's Medical School}\\
-  &\emph{Under Dr. \href{http://jmvidal.cse.sc.edu}{José M. Vidal}}
+  &\emph{Under Dr. \href{http://jmvidal.cse.sc.edu}{José Vidal}}
   \\\multicolumn{2}{c}{} \\
 
-  \textsc{Aug---Dec $'$11}
-  & Teaching Assistant --- \emph{Software Construction}\\
+  \textsc{Sep '11--Jul '12}
+  & Research Assistant \\
+  &\emph{Rede Nacional de Ensino e Pesquisa}\\
+  &\footnotesize{Study, experimentation, and Evaluation of IP stack implementations 
+  for low-power devices (e.g., TelosB and MicaZ motes). See 
+            \href{http://www.nr2.ufpr.br/cia2/}{the page} of the main project}\\
+  &\emph{Dr. \href{http://inf.ufg.br/~brunoos/}{Bruno Silvestre}}
+  \\\multicolumn{2}{c}{} \\
+
+  \textsc{Aug--Dec '11}
+  & Teaching Assistant \\
   &\emph{Instituto de Informática, Universidade Federal de Goiás}\\
+  &\emph{\footnotesize{Software Construction}} \\
   &\emph{Under Dr. Fabbrizio Soares}
   \\\multicolumn{2}{c}{} \\
 
-\end{tabular}
-
-%\setlength{\parindent}{1cm}
-
-\section{Research Experience}
-\begin{tabular}{r|p{11cm}}
-
-  \textsc{Sep $'$11---Jul $'$12}
+  \textsc{Mar--Sep '11}
   & Research Assistant \\
-  &\emph{Rede Nacional de Ensino e Pesquisa}\\
-  &\emph{Building Smart Cities: From the Instrumentation of Environments to the Development of Applications}\\
-  &\footnotesize{Joint effort of 18 Brazilian universities, this project aims at building an infrastructure of 
-    implementation, computation, and communication for the viabilization of smart cities. In particular, my main
-    task was to study, experiment, and evaluate implementations of the IP stack for low power devices (i.e., 
-    wireless sensor network nodes).}\\
-  &\emph{Dr. \href{http://inf.ufg.br/~brunoos/}{Bruno O. Silvestre}}
-  \\\multicolumn{2}{c}{} \\
-
-  \textsc{Mar---Sep $'$11}
-  & Research Assistant \\
-  &\emph{Universidade Federal de Goiás}\\
-  &\emph{Supporting the Development of Concurrent/Distributed Systems}\\
-  &\indent \footnotesize{Study of alternative models and mechanisms of coordination and communication in event-driven
-    concurrent/distributed systems; investigation of the contribution of dynamic programming 
-    languages (e.g., Lua) in the development of higher-level concurrency abstractions.}\\
-  &\emph{Dr. \href{http://inf.ufg.br/~brunoos/}{Bruno O. Silvestre}}
+  &\emph{Instituto de Informática, Universidade Federal de Goiás}\\
+  &\emph{Supporting the Development of Concurrent and Distributed Systems}\\
+  &\indent \footnotesize{Study of models and mechanisms of coordination and 
+        communication in event-driven concurrent and distributed systems; the 
+        use of Lua in the development of higher-level concurrency abstractions.}\\
+  &\emph{Dr. \href{http://inf.ufg.br/~brunoos/}{Bruno Silvestre}}
   \\\multicolumn{2}{c}{} \\
 
 \end{tabular}
 
-\nocite{salazar:1}
-
-\renewcommand\refname{Publications} 
-\bibliography{cv}
-\bibliographystyle{plainyr-rev}
-
-%% \section{Presentations}
-%% \begin{enumerate}
-%%   \renewcommand{\labelenumi}{[P\arabic{enumi}] }
-%% \item \emph{Proposta de um Modelo para o Processamento de Eventos Concorrentes no ALua}. Encontro Anual de Computação, Universidade Federal de Goiás. October 26, 2011.\\
-%% \end{enumerate}
+\section{Publications}
+\begin{enumerate}
+  \renewcommand{\labelenumi}{[\arabic{enumi}] }
+  \item Bruno Silvestre, Guilherme Salazar. Proposta de um Modelo para o
+        Processamento de Eventos Concorrentes no ALua. Encontro Anual de
+        Computação, Universidade Federal de Goiás. October 26, 2011 \\
+\end{enumerate}
 
 \section{Associations}
 
 \begin{tabular}{r|p{11cm}}
 
-  \textsc{Dec $'$15---Cur}
+  \textsc{Dec '15--Cur}
   & The NetBSD Foundation\\
   & \footnotesize{\url{http://www.netbsd.org/~salazar}}
   \\\multicolumn{2}{c}{}\\
 
-  \textsc{Feb $'$13---Cur}
+  \textsc{Feb '13--Cur}
   & Alpha Lambda Delta Honor Society\\
   & \footnotesize{Iniciated at the University of South Carolina, Columbia, on February 11, 2013}\\
   \multicolumn{2}{c}{}\\
 
-  \textsc{Dec $'$11---Cur}
+  \textsc{Dec '11--Cur}
   & Association for Computing Machinery\\
   & \footnotesize{\url{http://member.acm.org/~gmesalazar}}
   \\\multicolumn{2}{c}{}\\
@@ -210,17 +197,17 @@
 \section{Awards}
 \begin{tabular}{r|p{11cm}}
 
-  \textsc{$'$12---$'$13}
+  \textsc{'12--'13}
   & Dean's Honor List\\
   & College of Engineering \& Computing, University of South Carolina\\
   \multicolumn{2}{c}{}\\
 
-  \textsc{$'$12}
+  \textsc{'12}
   & Study Abroad Scholarship\\
   & Ministry of Education, Government of Brazil\\
   \multicolumn{2}{c}{}\\
 
-  \textsc{$'$11}
+  \textsc{'11}
   & Best Paper Award\\
   & Encontro Anual de Computação, Universidade Federal de Goiás\\
   \multicolumn{2}{c}{}\\
@@ -228,7 +215,6 @@
 \end{tabular}
 
 \section{Tools}
-\centering{Some tools I've used or regularly use:}
 
 \begin{multicols}{3}
   \begin{itemize}
@@ -245,42 +231,42 @@
   \item HTML/CSS \hfill \twonotes
   \item \LaTeX \hfill \twonotes
   \item SQL \hfill \twonotes
-  \item Android \hfill \threenotes
+  \item Android \hfill \twonotes
   \item GAE \hfill \twonotes
   \item GNU/Linux \hfill \threenotes
   \item NetBSD \hfill \twonotes
-  \item Windows \hfill \twonotes
-  \item Portuguese \hfill \fournotes
-  \item English \hfill \threenotes
-  \item Vagrant \hfill \threenotes
+  \item Windows \hfill \onenote
+  \item Vagrant \hfill \twonotes
   \item Git \hfill \twonotes
   \item GitHub \hfill \twonotes
   \item SVN \hfill \onenote
   \item CVS \hfill \onenote
+  \item BR Portuguese \hfill \twonotes
+  \item US English \hfill \twonotes
   \end{itemize} 
 \end{multicols}
 
 \vspace{1em}
 
 \begin{center}
-  \parbox{12cm}{
-    \onenote Some familiarity, small-scale projects and assignments \\
-    \twonotes Implementation-specific experience \\
-    \threenotes Quite familiar, used in limited settings as part of larger projects \\
-    \fournotes Extensive knowledge
-    %    \fivenotes Used in context of large scale, multi-group projects
-  }
+\parbox[c]{8cm}{
+  \onenote Familiar; small-scale projects \\
+  \twonotes Quite familiar; used in large projects \\
+  \threenotes Extensive knowledge
+}
 \end{center}
 
 \section{Misc}
-\centering{A lot of stuff interest me. Open-source software is one of them. I'm by no
-means a fanatic, but I believe openness---not only in software---can lead to a 
-better world. I love Computer Science and am fascinated by programming. 
+\centering{A lot of stuff interest me. Open-source software is one of them.
+I believe openness and freedom---not only in software---can lead to a better world. 
+I love Computer Science and am fascinated by programming. 
 Programming is the art of expressing \textit{uncertainty} by \textit{certain} 
 means. I'm impressed by Philosophy, especially Philosophy of Mathematics and 
 Logic; we tend to see math as a flawless endeavor, while philosophy shows us 
 the opposite---vide the quest for certainty that led to the basis of computer 
-science. I love learning and doing \textit{meaninful} work. Oh, I also happen to
-enjoy the gracious tastes of hops with malted barley.}
+science. I love learning and doing work that is \textit{meaningful} to me. We are 
+not just Turing Machines programmed to perform some action. I also happen to 
+enjoy the gracious tastes of \textit{beer}---more or less as in the Reinheitsgebot, 
+not the crazy mix of stuff we commonly see.}
 
 \end{document}

@@ -1,12 +1,10 @@
-proj	:= cv
-aux	:= functions
-rm	:= rm -rf
+proj  := cv
+aux   := functions
+rm    := rm -rf
 
 all: $(proj).pdf
 
-$(proj).pdf: $(proj).tex $(proj).bib $(aux).tex
-	xelatex $(proj)
-	bibtex $(proj)
+$(proj).pdf: $(proj).tex $(aux).tex
 	xelatex $(proj)
 	xelatex $(proj)
 
