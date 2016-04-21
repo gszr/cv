@@ -9,4 +9,4 @@ $(proj).pdf: $(proj).tex $(aux).tex
 	xelatex $(proj)
 
 clean:
-	-$(rm) *.pdf *.aux *.log *.out *.blg *.bbl
+	-$(rm) *.aux *.log *.out *.blg *.bbl
