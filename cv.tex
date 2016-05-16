@@ -35,8 +35,8 @@
                           {GitHub.com/salazar} \\
   Page & \texttt{at} \href{https://www.netbsd.org/~salazar}
                           {NetBSD.org/\textasciitilde salazar} \\
-  Mail & \texttt{at} \href{mailto:salazar@NetBSD.org}
-                          {salazar@NetBSD.org} 
+  Mail & \texttt{at} \href{mailto:gmesalazar@gmail.com}
+                          {gmesalazar@gmail.com}
 \end{tabular}
 
 \section{Education}
@@ -63,7 +63,7 @@
 \begin{tabular}{r|p{11cm}}
 
   \textsc{Jul--Aug '12} & Summer Pre-Academic Program\\ &
-  \emph{College of Health \& Human Services}\\ &
+  \emph{English Language Training Institute}\\ &
   \emph{University of North Carolina}\\ &
   Hour load: 115 hours
   \\\multicolumn{2}{c}{} \\
@@ -96,34 +96,39 @@
 \section{Work}
 \begin{tabular}{r|p{11cm}}
 
+  \textsc{Apr '16--Aug '16}\\
+  & Programmer \\
+  &\emph{Google Summer of Code, Google Inc., LabLua}\\
+  &\emph{\footnotesize{\href{https://goo.gl/g8Mb2M}{I/O API for NetBSD kernel Lua}}}\\
+  &\footnotesize{Working on NetBSD kernel Lua: the kernel port of the Lua 
+  language lacks some of the libraries available in user space Lua, such as
+  the standard 'io' module. Such modules are not freestanding; they rely on
+  the operating system to provide their functionality. The main goal of this
+  project is to develop I/O bindings to kernel Lua, supporting regular files
+  and sockets. More on the \href{https://goo.gl/g8Mb2M}{GSoC platform} and
+  \href{https://GitHub.com/salazar/luaio}{GitHub}}
+  \\\multicolumn{2}{c}{} \\
+
   \textsc{Dec '15--Cur}
   & Programmer \\
   &\emph{The NetBSD Foundation}\\
-  &\emph{\footnotesize{Working with kernel Lua, the port of the Lua language to
-          kernel space; currently, aims to bring user level Lua standard liraries 
-          to kernel space and help developing new scenarios of use for kernel 
-          Lua}}
+  &\emph{\footnotesize{My sponsored work area is kernel Lua, the Lua language
+  port to kernel space, which allows for kernel scripting; in general, my main
+  area of interest are the I/O subsystem, especially the VFS layer and networking}}
   \\\multicolumn{2}{c}{} \\
   
-  \textsc{May--Aug '15}
+  \textsc{Apr--Aug '15}
   & Programmer \\
   &\emph{Google Summer of Code, Google Inc., LabLua}\\
-  &\emph{\footnotesize{\href{https://www.google-melange.com/gsoc/project/details/google/gsoc2015/gmesalazar/5741031244955648}{Port Lua test suite to the NetBSD kernel}}}\\
-  &\emph{Under Lourival Neto}
-  \\\multicolumn{2}{c}{} \\
-
-  \textsc{Mar--Jul '15}
-  & Teaching Assistant\\
-  &\emph{Instituto de nformática, Universidade Federal de Goiás}\\
-  &\emph{\footnotesize{Formal Languages and Automata Theory}} \\
-  &\emph{Under Dr. {Márcia Cappelle}} 
-  \\\multicolumn{2}{c}{} \\
-
-  \textsc{Mar--Jul '14}
-  & Teaching Assistant \\
-  &\emph{Instituto de Informática, Universidade Federal de Goiás}\\
-  &\emph{\footnotesize{Operating Systems}} \\
-  &\emph{Under Dr. \href{http://inf.ufg.br/~ricardo/}{Ricardo Rocha}}
+  &\emph{\footnotesize{\href{https://goo.gl/xSl1bW}{Port Lua test
+         suite to the NetBSD kernel}}}\\
+  &\footnotesize{The Lua interpreter was ported to the NetBSD kernel in a GSoC 
+   2010 project, making it possible to interact with kernel subsystems using
+   Lua. The main goal of this project was to port Lua test suite to the NetBSD
+   kernel; test scripts had to be adapted to remove dependencies from floating-
+   point numbers and parts of Lua's standard libraries had to be reimplemented 
+   using kernel interfaces. More on \href{https://goo.gl/xSl1bW}{Google Melange}
+   and \href{https://GitHub.com/salazar/luatests}{GitHub}}
   \\\multicolumn{2}{c}{} \\
 
   \textsc{Jan--Jul '13}
@@ -142,13 +147,6 @@
   &\emph{Under Dr. \href{http://inf.ufg.br/~brunoos/}{Bruno Silvestre}}
   \\\multicolumn{2}{c}{} \\
 
-  \textsc{Aug--Dec '11}
-  & Teaching Assistant \\
-  &\emph{Instituto de Informática, Universidade Federal de Goiás}\\
-  &\emph{\footnotesize{Software Construction}} \\
-  &\emph{Under Dr. Fabbrizio Soares}
-  \\\multicolumn{2}{c}{} \\
-
   \textsc{Mar--Sep '11}
   & Research Assistant \\
   &\emph{Instituto de Informática, Universidade Federal de Goiás}\\
@@ -158,6 +156,18 @@
         use of Lua in the development of higher-level concurrency abstractions.}\\
   &\emph{Under Dr. \href{http://inf.ufg.br/~brunoos/}{Bruno Silvestre}}
   \\\multicolumn{2}{c}{} \\
+
+  \textsc{'11, '14, '15}
+  & Undergraduate TA \\
+  &\emph{Instituto de Informática, Universidade Federal de Goiás} \\
+  &\emph{Mar--Jul '14: \footnotesize{Operating Systems,
+                       under Dr. Ricardo Rocha}} \\
+  &\emph{Mar--Jul '15: \footnotesize{Formal Languages and Automata Theory,
+                       under Dr. Marcia Capelle}} \\
+  &\emph{Aug--Dec '11: \footnotesize{Software Construction,
+                       under Dr. Fabrizzio Soares}}
+  \\\multicolumn{2}{c}{} \\
+
 
 \end{tabular}
 
@@ -225,7 +235,7 @@
   \item Python \hfill \twonotes
   \item JavaScript \hfill \twonotes
   \item HTML/CSS \hfill \twonotes
-  \item \LaTeX \hfill \twonotes
+  \item \LaTeX \hfill \onenote
   \item SQL \hfill \twonotes
   \item Android \hfill \twonotes
   \item GAE \hfill \twonotes
@@ -247,7 +257,7 @@
 \begin{center}
 \parbox[c]{8cm}{
   \onenote Familiar; small-scale projects \\
-  \twonotes Quite familiar; used in large projects \\
+  \twonotes Quite familiar; used in larger projects \\
   \threenotes Extensive knowledge
 }
 \end{center}
@@ -255,14 +265,12 @@
 \section{Misc}
 \centering{A lot of stuff interest me. Open-source software is one of them.
 I believe openness and freedom---not only in software---can lead to a better world. 
-I love Computer Science and am fascinated by programming. 
-Programming is the art of expressing \textit{uncertainty} by \textit{certain} 
-means. I'm impressed by Philosophy, especially Philosophy of Mathematics and 
-Logic; we tend to see math as a flawless endeavor, while philosophy shows us 
-the opposite---vide the quest for certainty that led to the basis of computer 
-science. I love learning and doing work that is \textit{meaningful} to me. We are 
-not just Turing Machines programmed to perform some action. I also happen to 
-enjoy the gracious tastes of \textit{beer}---more or less as in the Reinheitsgebot, 
-not the crazy mix of stuff we commonly see.}
+I love Computer Science and am fascinated by programming. I have always been
+interested in Philosophy, especially Philosophy of Mathematics and Logic; 
+we tend to see math as a flawless endeavor, while philosophy shows us the 
+opposite---vide the quest for certainty that led to the basis of computer science. 
+I love learning and doing work that is meaningful to me---for the most part, it
+involves system-level programming. We are not just machines programmed to
+perform some action; let's not lose passion for what we do.}
 
 \end{document}
