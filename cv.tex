@@ -24,7 +24,7 @@
 
 \font\fb=''[cmr10]''
 
-\par{\center{\huge\uline{{Guilherme Salazar}}}\bigskip\par\vspace{4ex}}
+\par{\center{\huge\uline{{Guilherme Salazar}}}\bigskip\par\vspace{6ex}}
 
 \section{Personal}
 
@@ -42,17 +42,13 @@
 \begin{tabular}{r|p{11cm}}
   \textsc{Aug '12--Jul '13} & Computer Science, Visiting\\ &
   \emph{College of Engineering \& Computing}\\ &
-  \textbf{University of South Carolina, United States}
+  \emph{University of South Carolina, United States}
   \\\multicolumn{2}{c}{} \\
 
-  \textsc{Aug '11--Jul '16} & Computer Science, B.Sc\\ &
+  \textsc{Mar '10--Jul '16} & Computer Science, B.Sc\\ &
+  Software Engineering, B.Sc, dropped \\ &
   \emph{Instituto de Informática}\\ &
-  \textbf{Universidade Federal de Goiás, Brazil}
-  \\\multicolumn{2}{c}{} \\
-
-  \textsc{Mar '10--Jul '11} & Software Engineering, Dropped \\ &
-  \emph{Instituto de Informática}\\ &
-  \textbf{Universidade Federal de Goiás, Brazil}
+  \emph{Universidade Federal de Goiás, Brazil} \\
 \end{tabular}
 
 \section{Courses}
@@ -67,18 +63,6 @@
   \textsc{Jan '10--Jul '11} & English Language Course\\ &
   \emph{Cultural Norte-Americano} \\ &
   Hour load: 120 hours
-  \\\multicolumn{2}{c}{} \\
-
-  \textsc{Oct '10} & Introduction to Metrics and Measurement of Software\\ &
-  \emph{Instituto de Informática} \\ &
-  \emph{Universidade Federal de Goiás}\\ &
-  Hour load: 8 hours
-  \\\multicolumn{2}{c}{} \\
-
-  \textsc{Oct '10} & Parallel Programming in CUDA\\ &
-  \emph{Instituto de Informática} \\ &
-  \emph{Universidade Federal de Goiás}\\ &
-  Hour load: 10 hours
 \end{tabular}
 
 \section{Work}
@@ -88,21 +72,19 @@
   \textsc{Apr--Aug '16} & Programmer \\
   &\emph{Google Summer of Code, LabLua}\\
   &\emph{\footnotesize{\href{https://goo.gl/g8Mb2M}{I/O API for NetBSD kernel Lua}}}\\
-  &\footnotesize{Working on NetBSD kernel Lua: the kernel port of the Lua 
-  language lacks some of the libraries available in user space Lua, such as
-  the standard 'io' module. Such modules are not freestanding; they rely on
-  the operating system to provide their functionality. The main goal of this
-  project is to develop I/O bindings to kernel Lua, supporting regular files
-  and sockets. More on the \href{https://goo.gl/g8Mb2M}{GSoC platform} and
+  &\footnotesize{The kernel port of the Lua language lacks some of the libraries
+  available in user space Lua, such as the standard 'io', 'os', and 'math' modules. 
+  Such modules are not freestanding; they rely on the operating system to provide
+  their functionality. In this project I ported Lua 'io' module and developed a 
+  sockets library to kernel Lua. See the project on 
   \href{https://GitHub.com/salazar/luaio}{GitHub}}
   \\\multicolumn{2}{c}{} \\
 
   \textsc{Dec '15--Cur}
   & Programmer \\
   &\emph{The NetBSD Foundation}\\
-  &\emph{\footnotesize{My sponsored work area is kernel Lua, the Lua language
-  port to kernel space, which allows for kernel scripting; in general, my main
-  area of interest are the I/O subsystem, especially the VFS layer and networking}}
+  &\footnotesize{Maintainer for Lua and kernel Lua, the Lua language
+  port to kernel space, which allows for kernel scripting in Lua}
   \\\multicolumn{2}{c}{} \\
   
   \textsc{Apr--Aug '15}
@@ -110,50 +92,58 @@
   &\emph{Google Summer of Code, LabLua}\\
   &\emph{\footnotesize{\href{https://goo.gl/xSl1bW}{Port Lua test
          suite to the NetBSD kernel}}}\\
-  &\footnotesize{The Lua interpreter was ported to the NetBSD kernel in a GSoC 
-   2010 project, making it possible to interact with kernel subsystems using
-   Lua. The main goal of this project was to port Lua test suite to the NetBSD
-   kernel; test scripts had to be adapted to remove dependencies from floating-
-   point numbers and parts of Lua's standard libraries had to be reimplemented 
-   using kernel interfaces. More on \href{https://goo.gl/xSl1bW}{Google Melange}
-   and \href{https://GitHub.com/salazar/luatests}{GitHub}}
+  &\footnotesize{Ported Lua test suite to NetBSD kernel Lua, the port of the Lua
+  language to kernel space; test scripts
+   had to be adapted to remove dependencies from floating-point numbers and parts
+   of Lua's standard libraries had to be reimplemented using kernel interfaces.
+   See the project on 
+   \href{https://GitHub.com/salazar/luatests}{GitHub}}
   \\\multicolumn{2}{c}{} \\
+
+  \textsc{Jan '14--Jul '15}
+  & Programmer \\
+  &\emph{Macro Softwares, LTDA}\\
+  &\footnotesize{Developed an Android app for package delivery management. The
+  app displays the info of each package, such as recipient and address.
+  The courier can attach observations in text, audio, take pictures,
+  change the status of a package, etc. The app also has a messaging module,
+  allowing couriers to communicate among themselves and with a dispatcher. The app
+  is hosted on 
+  \href{https://play.google.com/store/apps/details?id=br.com.entregadoronline}{Google Play}} \\
+  \multicolumn{2}{c}{} \\
 
   \textsc{Jan--Jul '13}
   & Programmer \\
   &\emph{College of Engineering \& Computing, University of South Carolina}\\
-  &\footnotesize{Development of a GAE app for USC's Medical School}\\
-  &\emph{Under Dr. \href{http://jmvidal.cse.sc.edu}{José Vidal}}
-  \\\multicolumn{2}{c}{} \\
+  &\footnotesize{Development of a GAE app for USC's Medical School. Under
+  Dr. \href{http://jmvidal.cse.sc.edu}{José Vidal}}\\
+  \multicolumn{2}{c}{} \\
 
   \textsc{Sep '11--Jul '12}
   & Research Assistant \\
   &\emph{Rede Nacional de Ensino e Pesquisa}\\
   &\footnotesize{Study, experimentation, and Evaluation of IP stack implementations 
   for low-power devices (e.g., TelosB and MicaZ motes). See 
-            \href{http://www.nr2.ufpr.br/cia2/}{the page} of the main project}\\
-  &\emph{Under Dr. \href{http://inf.ufg.br/~brunoos/}{Bruno Silvestre}}
-  \\\multicolumn{2}{c}{} \\
+            \href{http://www.nr2.ufpr.br/cia2/}{the page} of the main project.
+  Under Dr. \href{http://inf.ufg.br/~brunoos/}{Bruno Silvestre}}\\
+  \multicolumn{2}{c}{} \\
 
   \textsc{Mar--Sep '11}
   & Research Assistant \\
   &\emph{Instituto de Informática, Universidade Federal de Goiás}\\
   &\emph{Supporting the Development of Concurrent and Distributed Systems}\\
-  &\indent \footnotesize{Study of models and mechanisms of coordination and 
+  &\footnotesize{Study of models and mechanisms of coordination and 
         communication in event-driven concurrent and distributed systems; the 
-        use of Lua in the development of higher-level concurrency abstractions.}\\
-  &\emph{Under Dr. \href{http://inf.ufg.br/~brunoos/}{Bruno Silvestre}}
-  \\\multicolumn{2}{c}{} \\
+        use of Lua in the development of higher-level concurrency abstractions.
+  Under Dr. \href{http://inf.ufg.br/~brunoos/}{Bruno Silvestre}}\\
+  \multicolumn{2}{c}{} \\
 
-  \textsc{'11, '14, '15}
+  \textsc{2011, 2014, 2015}
   & Teaching Assistant \\
   &\emph{Instituto de Informática, Universidade Federal de Goiás} \\
-  &\emph{Mar--Jul '14: \footnotesize{Operating Systems,
-                       under Dr. Ricardo Rocha}} \\
-  &\emph{Mar--Jul '15: \footnotesize{Formal Languages and Automata Theory,
-                       under Dr. Marcia Capelle}} \\
-  &\emph{Aug--Dec '11: \footnotesize{Software Construction,
-                       under Dr. Fabrizzio Soares}}
+  &\footnotesize{Mar--Jul '15: Formal Languages and Automata} \\
+  &\footnotesize{Mar--Jul '14: Operating Systems} \\
+  &\footnotesize{Aug--Dec '11: Software Construction}
 \end{longtable}
 
 \section{Publications}
@@ -213,11 +203,11 @@
     \setlength{\parskip}{0pt}
     \setlength{\parsep}{0pt}
   \item C \hfill \threenotes 
-  \item Java \hfill \twonotes
   \item Lua \hfill \threenotes
-  \item nesC \hfill \onenote
+  \item Java \hfill \twonotes
   \item Python \hfill \twonotes
   \item JavaScript \hfill \twonotes
+  \item nesC \hfill \onenote
   \item HTML/CSS \hfill \twonotes
   \item \LaTeX \hfill \onenote
   \item SQL \hfill \twonotes
