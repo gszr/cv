@@ -62,9 +62,9 @@
 
 \begin{longtable}{r|p{11cm}}
 
-  \textsc{Apr--Aug '16} & Programmer \\
+  \textsc{Apr--Aug '16} & Student Developer \\
   &\emph{Google Summer of Code, LabLua}\\
-  &\emph{\footnotesize{\href{https://goo.gl/g8Mb2M}{I/O API for NetBSD kernel Lua}}}\\
+  &\emph{\footnotesize{I/O API for NetBSD kernel Lua}}\\
   &\footnotesize{The kernel port of the Lua language lacks some of the libraries
   available in user space Lua, such as the standard 'io', 'os', and 'math' modules. 
   Such modules are not freestanding; they rely on the operating system to provide
@@ -74,17 +74,20 @@
   \\\multicolumn{2}{c}{} \\
 
   \textsc{Dec '15--Cur}
-  & Programmer \\
+  & Developer (Volunteer)\\
   &\emph{The NetBSD Foundation}\\
-  &\footnotesize{Maintainer for Lua and kernel Lua, the Lua language
-  port to kernel space, which allows for kernel scripting in Lua}
+  &\footnotesize{Maintainer for Lua user and kernel space implementations. I
+  also maintain, out of tree, the test suite for kernel space Lua. I've done
+  work porting parts of Lua standard libraries to kernel space--e.g., \emph{base, 
+  math, io, os} and developing I/O bindings to file systems and sockets. More 
+  on \href{https://GitHub.com/salazar/netbsd}{GitHub}}
   \\\multicolumn{2}{c}{} \\
   
   \textsc{Apr--Aug '15}
-  & Programmer \\
+  & Student Developer \\
   &\emph{Google Summer of Code, LabLua}\\
-  &\emph{\footnotesize{\href{https://goo.gl/xSl1bW}{Port Lua test
-         suite to the NetBSD kernel}}}\\
+  &\emph{\footnotesize{Port Lua test
+         suite to the NetBSD kernel}}\\
   &\footnotesize{Ported Lua test suite to NetBSD kernel Lua, the port of the Lua
   language to kernel space; test scripts
    had to be adapted to remove dependencies from floating-point numbers and parts
@@ -108,27 +111,23 @@
   \textsc{Jan--Jul '13}
   & Programmer \\
   &\emph{College of Engineering \& Computing, University of South Carolina}\\
-  &\footnotesize{Development of a GAE (Python) app for USC's Medical School. Under
-  Dr. \href{http://jmvidal.cse.sc.edu}{José Vidal}}\\
+  &\footnotesize{Developed a web app with some electronic health records (EHR)
+  features, managing patient personal data, questionnaires and quizzes, news feed, 
+  and more. Google App Engine (Python) was used, along with Bootstrap and jQuery
+  on the front end. Under Dr. \href{http://jmvidal.cse.sc.edu}{José Vidal}}\\
   \multicolumn{2}{c}{} \\
 
-  \textsc{Sep '11--Jul '12}
-  & Research Assistant \\
-  &\emph{Rede Nacional de Ensino e Pesquisa}\\
-  &\footnotesize{Study, experimentation, and Evaluation of IP stack implementations 
-  for low-power devices (e.g., TelosB and MicaZ motes). See 
-            \href{http://www.nr2.ufpr.br/cia2/}{the page} of the main project.
-  Under Dr. \href{http://inf.ufg.br/~brunoos/}{Bruno Silvestre}}\\
-  \multicolumn{2}{c}{} \\
-
-  \textsc{Mar--Sep '11}
+  \textsc{Mar '11--Jul '12}
   & Research Assistant \\
   &\emph{Instituto de Informática, Universidade Federal de Goiás}\\
-  &\emph{Supporting the Development of Concurrent and Distributed Systems}\\
-  &\footnotesize{Study of models and mechanisms of coordination and 
-        communication in event-driven concurrent and distributed systems; the 
-        use of Lua in the development of higher-level concurrency abstractions.
-  Under Dr. \href{http://inf.ufg.br/~brunoos/}{Bruno Silvestre}}\\
+  &\footnotesize{\emph{Concurrent \& Distributed Systems}: Study of models and
+  mechanisms of coordination and communication in event-driven concurrent and 
+  distributed systems; the use of Lua in the development of higher-level
+  concurrency abstractions.}\\
+  &\footnotesize{\emph{Smart Cities (IoT)}: Study, experimentation, and Evaluation 
+  of IP stack implementations for low-power devices (e.g., TelosB and MicaZ motes).}\\
+  &\footnotesize{Both projects under 
+    Dr. \href{http://inf.ufg.br/~brunoos/}{Bruno Silvestre}}\\
   \multicolumn{2}{c}{} \\
 
   \textsc{2011, 2014, 2015}
@@ -189,35 +188,69 @@
 
 \section{Skills}
 
+Tools \& technologies I have used and am familiar with
+
+\begin{itemize}
+\renewcommand{\labelitemi}{\textcolor{lightg}{\symbol{"00BB}}}
+\setlength{\itemsep}{1pt}
+\setlength{\parskip}{0pt}
+\setlength{\parsep}{0pt}
+
 \begin{multicols}{3}
-  \begin{itemize}
-    \renewcommand{\labelitemi}{\textcolor{lightg}{\symbol{"00BB}}}
-    \setlength{\itemsep}{1pt}
-    \setlength{\parskip}{0pt}
-    \setlength{\parsep}{0pt}
-  \item C \hfill \threenotes 
-  \item Lua \hfill \threenotes
-  \item Java \hfill \twonotes
-  \item Python \hfill \twonotes
-  \item JavaScript \hfill \twonotes
-  \item nesC \hfill \onenote
-  \item HTML/CSS \hfill \twonotes
-  \item \LaTeX \hfill \onenote
-  \item SQL \hfill \twonotes
-  \item Android \hfill \twonotes
-  \item GAE \hfill \twonotes
-  \item GNU/Linux \hfill \threenotes
-  \item NetBSD \hfill \twonotes
-  \item Windows \hfill \onenote
-  \item Vagrant \hfill \twonotes
-  \item Git \hfill \twonotes
-  \item GitHub \hfill \twonotes
-  \item SVN \hfill \onenote
-  \item CVS \hfill \onenote
-  \item BR Portuguese \hfill \twonotes
-  \item US English \hfill \twonotes
-  \end{itemize} 
+  \item Portuguese (BR) \hfill \threenotes
+  \item English (US)    \hfill \threenotes
 \end{multicols}
+
+\begin{multicols}{3}
+  \item C          \hfill \threenotes 
+  \item Lua        \hfill \threenotes
+  \item Python     \hfill \twonotes
+  \item Java       \hfill \twonotes
+  \item JavaScript \hfill \twonotes
+  \item nesC       \hfill \onenote
+ \end{multicols}
+
+\begin{multicols}{3}
+  \item OpenResty  \hfill \onenote
+  \item Flask      \hfill \onenote
+  \item GAE        \hfill \twonotes
+  \item AWS (EC2)  \hfill \onenote
+\end{multicols}
+
+\begin{multicols}{3}
+  \item SQL        \hfill \onenote
+  \item MySQL      \hfill \onenote
+  \item PostgreSQL \hfill \onenote
+  \item SQLite     \hfill \onenote
+  \item HBase      \hfill \onenote
+  \item Redis      \hfill \onenote
+\end{multicols}
+
+\begin{multicols}{3}
+  \item HTML/CSS   \hfill \twonotes
+  \item Bootstrap  \hfill \twonotes
+  \item jQuery     \hfill \onenote
+  \item Knockout   \hfill \onenote
+\end{multicols}
+
+\begin{multicols}{3}
+  \item Android   \hfill \twonotes
+  \item FreeBSD   \hfill \twonotes
+  \item NetBSD    \hfill \twonotes
+  \item GNU/Linux \hfill \threenotes
+  \item TinyOS    \hfill \onenote
+\end{multicols}
+
+\begin{multicols}{3}
+  \item Vagrant \hfill \twonotes
+  \item Git     \hfill \twonotes
+  \item GitHub  \hfill \twonotes
+  \item SVN     \hfill \onenote
+  \item CVS     \hfill \onenote
+\end{multicols}
+
+
+\end{itemize}
 
 \vspace{1em}
 
