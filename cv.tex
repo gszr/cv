@@ -1,7 +1,6 @@
 \documentclass[a4paper,10pt]{article}
 
 \usepackage{fontspec}
-\RequirePackage{color,graphicx}
 \usepackage[usenames,dvipsnames]{xcolor}
 \usepackage[big]{layaureo}
 \usepackage{supertabular}
@@ -16,6 +15,13 @@
 \usepackage{enumitem}
 \usepackage[normalem]{ulem}
 
+\usepackage{geometry}
+\geometry{
+  noheadfoot=true,
+  top=1.5cm,
+  bottom=1.5cm
+}
+
 \pagestyle{empty}
 
 \include{functions}
@@ -26,125 +32,158 @@
 
 \center{\huge\uline{{Guilherme Salazar}}}
 \center{\large{Goiânia, Brazil} \\
-\href{mailto:gmesalazar@gmail.com}{gmesalazar@gmail.com} \\
-\href{https://www.github.com/salazar/}{github.com/salazar}\vspace{6ex}
+\href{mailto:gmesalazar@acm.org}{gsz@acm.org} \\
+\href{https://www.github.com/salazar/}{github.com/salazar}\vspace{3ex}
 }
 
 \section{Education}
 
 \begin{tabular}{r|p{11cm}}
-  \textsc{Aug '12--Jul '13} & Computer Science, Non-degree Visiting\\ &
-  \emph{University of South Carolina, United States}
+
+  \textsc{Jan '10--Jul '16} & Computer Science, B.Sc\\ &
+  \emph{Universidade Federal de Goiás, Brazil} \\ &
+  \footnotesize{(Spent 1,5 year in Software Engineering before switching to
+  Computer Science)}
   \\\multicolumn{2}{c}{} \\
 
-  \textsc{Aug '11--Jul '16} & Computer Science, B.Sc\\ &
-  \emph{Universidade Federal de Goiás, Brazil}
-  \\\multicolumn{2}{c}{} \\
-
-  \textsc{Feb '10--Jul '11} & Software Engineering, Dropped\\ &
-  \emph{Universidade Federal de Goiás, Brazil} \\
-\end{tabular}
-
-\section{Courses}
-
-\begin{tabular}{r|p{11cm}}
-  \textsc{Jul--Aug '12} & Summer Pre-Academic Program\\ &
-  \emph{English Language Training Institute}\\ &
-  \emph{University of North Carolina}\\ &
-  Hour load: 115 hours
-  \\\multicolumn{2}{c}{} \\
-
-  \textsc{Jan '10--Jul '11} & English Language Course\\ &
-  \emph{Cultural Norte-Americano} \\ &
-  Hour load: 120 hours
+  \textsc{Aug '12--Jul '13} & Computer Science, Non-degree Program \\ &
+  \emph{University of South Carolina, United States}\\
+ 
 \end{tabular}
 
 \section{Experience}
 
+\setlength{\LTpre}{0pt}
+\setlength{\LTpost}{0pt}
+
 \begin{longtable}{r|p{11cm}}
 
-  \textsc{Nov '16--Cur}
-  & Backend Engineer\\
+  \textsc{Jul '17--Cur} & Software Engineer\\
+  &\emph{\href{https://konghq.com}{Kong Inc.}}\\
+  &\footnotesize{Part of the team that develops and maintains
+  \href{https://GitHub.com/Kong/kong}{Kong},
+  the world's most popular open-source API gateway and microservices
+  management layer.}
+  \\\multicolumn{2}{c}{} \\
+
+  \textsc{Nov '16--Jul '17} & Software Engineer\\
   &\emph{\href{https://appbase.io}{Appbase, Inc}}\\
   &\footnotesize{Building real-time abstractions on top of
-  Elasticsearch}
+  Elasticsearch; the product is based on OpenResty (Nginx + Lua) and Docker.}
   \\\multicolumn{2}{c}{} \\
 
-  \textsc{Apr--Aug '16} & Student Developer \\
-  &\emph{Google Summer of Code, LabLua}\\
-  &\emph{\footnotesize{I/O API for NetBSD kernel Lua}}\\
-  &\footnotesize{The kernel port of the Lua language lacks some of the libraries
-  available in user space Lua, such as the standard 'io', 'os', and 'math' modules. 
-  Such modules are not freestanding; they rely on the operating system to provide
-  their functionality. In this project I ported Lua 'io' module and developed a 
-  sockets library to kernel Lua. See the project on 
-  \href{https://GitHub.com/salazar/luaio}{GitHub}}
+  \textsc{Dec '15--Cur} & Developer\\ &\emph{The NetBSD
+  Foundation}\\ &\footnotesize{Maintainer for Lua user and kernel
+  space implementations, as well as the test suite for kernel Lua.
+  I've done work porting parts of Lua standard
+  libraries to kernel space--e.g., \emph{base, math, io, os} and
+  developing I/O bindings to file systems and sockets.
+  (\href{https://GitHub.com/salazar/netbsd}{GitHub.com/salazar/netbsd}})
   \\\multicolumn{2}{c}{} \\
 
-  \textsc{Dec '15--Cur}
-  & Developer (Volunteer)\\
-  &\emph{The NetBSD Foundation}\\
-  &\footnotesize{Maintainer for Lua user and kernel space implementations. I
-  also maintain, out of tree, the test suite for kernel space Lua. I've done
-  work porting parts of Lua standard libraries to kernel space--e.g., \emph{base, 
-  math, io, os} and developing I/O bindings to file systems and sockets. More 
-  on \href{https://GitHub.com/salazar/netbsd}{GitHub}}
-  \\\multicolumn{2}{c}{} \\
-  
-  \textsc{Apr--Aug '15}
-  & Student Developer \\
-  &\emph{Google Summer of Code, LabLua}\\
-  &\emph{\footnotesize{Port Lua test
-         suite to the NetBSD kernel}}\\
-  &\footnotesize{Ported Lua test suite to NetBSD kernel Lua, the port of the Lua
-  language to kernel space; test scripts
-   had to be adapted to remove dependencies from floating-point numbers and parts
-   of Lua's standard libraries had to be reimplemented using kernel interfaces.
-   See the project on 
-   \href{https://GitHub.com/salazar/luatests}{GitHub}}
+  \textsc{Oct '15--Feb '16} & Software Engineering Intern \\ &\emph{Zenedge,
+  LTDA}\\ \multicolumn{2}{c}{} \\
+
+  \textsc{Apr--Aug '15} & Student Developer \\ &\emph{Google Summer of
+  Code, LabLua}\\ &\footnotesize{Ported Lua test suite to NetBSD
+  kernel Lua; tests
+  had to be adapted to be free offloating-point numbers and parts of Lua's standard libraries had to be
+  ported using kernel interfaces.
+  (\href{https://GitHub.com/salazar/luatests}{GitHub.com/salazar/luatests}})
   \\\multicolumn{2}{c}{} \\
 
-  \textsc{Jan '14--Jul '15}
-  & Programmer \\
-  &\emph{Macro Softwares, LTDA}\\
-  &\footnotesize{Developed an Android app for package delivery management. The
-  app displays the info of each package, such as recipient and address.
-  The courier can attach observations in text, audio, take pictures,
-  change the status of a package, etc. The app also has a messaging module,
-  allowing couriers to communicate among themselves and with a dispatcher. 
-  I also developed Spring RESTful web services used by the app. See 
-  \href{https://play.google.com/store/apps/details?id=br.com.entregadoronline}{Google Play}} \\
+  \textsc{Jan '14--Jul '15} & Programmer \\ &\emph{Macro Softwares,
+  LTDA}\\ &\footnotesize{Developed an Android app for package delivery
+  management along with Spring RESTful web services used by the app
+  and related software. It's on Google Play under the name "Entregador
+  Online"}\\ \multicolumn{2}{c}{} \\
+
+  \textsc{Jan--Jul '13} & Programmer \\ &\emph{University of South Carolina}\\
+  &\footnotesize{Developed a web app with electronic health
+  records (EHR) features using Google App Engine
+  (Python), along with Bootstrap and jQuery on the front end.
+  Under Dr. \href{http://jmvidal.cse.sc.edu}{José Vidal}}\\
   \multicolumn{2}{c}{} \\
 
-  \textsc{Jan--Jul '13}
-  & Programmer \\
-  &\emph{College of Engineering \& Computing, University of South Carolina}\\
-  &\footnotesize{Developed a web app with some electronic health records (EHR)
-  features, managing patient personal data, questionnaires and quizzes, news feed, 
-  and more. Google App Engine (Python) was used, along with Bootstrap and jQuery
-  on the front end. Under Dr. \href{http://jmvidal.cse.sc.edu}{José Vidal}}\\
+  \textsc{2011, 2012} & Research Assistant \\ &\emph{Instituto
+  de Informática, Universidade Federal de Goiás}\\
+  &\footnotesize{$\circ$ Sep '11--Jul '12: Smart Cities (IoT): Study, experimentation,
+  and Evaluation of IP stack implementations for low-power devices
+  (e.g., TelosB and MicaZ motes).}\\  &\footnotesize{$\circ$ Mar--Sep '11: Concurrent \& Distributed Systems: Study of
+  models and mechanisms of coordination and communication in
+  event-driven concurrent and distributed systems}\\
+ &\footnotesize{Both projects
+  under Dr. \href{http://inf.ufg.br/~brunoos/}{Bruno Silvestre}}\\
+
   \multicolumn{2}{c}{} \\
 
-  \textsc{Mar '11--Jul '12}
-  & Research Assistant \\
-  &\emph{Instituto de Informática, Universidade Federal de Goiás}\\
-  &\footnotesize{\emph{Concurrent \& Distributed Systems}: Study of models and
-  mechanisms of coordination and communication in event-driven concurrent and 
-  distributed systems; the use of Lua in the development of higher-level
-  concurrency abstractions.}\\
-  &\footnotesize{\emph{Smart Cities (IoT)}: Study, experimentation, and Evaluation 
-  of IP stack implementations for low-power devices (e.g., TelosB and MicaZ motes).}\\
-  &\footnotesize{Both projects under 
-    Dr. \href{http://inf.ufg.br/~brunoos/}{Bruno Silvestre}}\\
-  \multicolumn{2}{c}{} \\
+  \textsc{2011, 2014, 2015} & Teaching Assistant \\ &\emph{Instituto
+  de Informática, Universidade Federal de Goiás} \\
+  &\footnotesize{$\circ$ Mar--Jul '15: Formal Languages and Automata} \\
+  &\footnotesize{$\circ$ Mar--Jul '14: Operating Systems} \\
+  &\footnotesize{$\circ$ Aug--Dec '11: Software Construction}\\
 
-  \textsc{2011, 2014, 2015}
-  & Teaching Assistant \\
-  &\emph{Instituto de Informática, Universidade Federal de Goiás} \\
-  &\footnotesize{Mar--Jul '15: Formal Languages and Automata} \\
-  &\footnotesize{Mar--Jul '14: Operating Systems} \\
-  &\footnotesize{Aug--Dec '11: Software Construction}
 \end{longtable}
+
+\section{Skills}
+
+\begin{itemize}
+\renewcommand{\labelitemi}{\textcolor{lightg}{\symbol{"00BB}}}
+\setlength{\itemsep}{1pt}
+\setlength{\parskip}{0pt}
+\setlength{\parsep}{0pt}
+
+\begin{multicols}{3}
+  \item Portuguese (BR) \hfill \threenotes
+  \item English (US)    \hfill \threenotes
+  \item C          \hfill \threenotes 
+  \item Lua        \hfill \threenotes
+  \item Python     \hfill \twonotes
+  \item Java       \hfill \twonotes
+  \item JavaScript \hfill \onenote
+  \item Shell Scripting \hfill \twonotes
+  \item Go         \hfill \onenote
+  \item nginx         \hfill \twonotes
+  \item OpenResty     \hfill \twonotes
+  \item Docker        \hfill \twonotes
+  \item AWS (EC2)     \hfill \onenote
+  \item Elasticsearch \hfill \onenote
+  \item Redis         \hfill \onenote
+  \item SQL           \hfill \onenote
+  \item GNU/Linux \hfill \threenotes
+  \item FreeBSD   \hfill \twonotes
+  \item NetBSD    \hfill \twonotes
+  \item Android   \hfill \onenote
+  \item Vagrant \hfill \onenote
+  \item Git     \hfill \twonotes
+  \item SVN     \hfill \onenote
+  \item CVS     \hfill \onenote
+\end{multicols}
+
+\end{itemize}
+
+\vspace{0.5em}
+
+\begin{center}
+\parbox[c]{8cm}{
+  \onenote Familiar; small-scale projects \\
+  \twonotes Quite familiar; used in larger projects \\
+  \threenotes Extensive knowledge
+}
+\end{center}
+
+\section{Courses}
+
+\begin{tabular}{r|p{11cm}}
+
+  \textsc{Jul--Aug '12} & Summer Pre-Academic Program\\ &
+  \emph{CHHS, University of North Carolina, Charlotte}\\ & 115 hours
+  \\\multicolumn{2}{c}{} \\
+
+  \textsc{Jan '10--Jul '11} & English Language Course\\ &
+  \emph{Cultural Norte-Americano} \\ & 120 hours\\
+
+\end{tabular}
 
 \section{Publications}
 \begin{enumerate}
@@ -158,13 +197,9 @@
 
 \begin{tabular}{r|p{11cm}}
 
-  \textsc{May '16--Cur}
+  \textsc{May '16--May '17}
   & Brazilian Computing Society\\
   \multicolumn{2}{c}{}\\
-
-  \textsc{Dec '15--Cur}
-  & The NetBSD Foundation
-  \\\multicolumn{2}{c}{}\\
 
   \textsc{Feb '13--Cur}
   & Alpha Lambda Delta Honor Society\\
@@ -193,80 +228,5 @@
   & Encontro Anual de Computação, Universidade Federal de Goiás\\
 
 \end{tabular}
-
-\section{Skills}
-
-Tools \& technologies I have used and am familiar with
-
-\begin{itemize}
-\renewcommand{\labelitemi}{\textcolor{lightg}{\symbol{"00BB}}}
-\setlength{\itemsep}{1pt}
-\setlength{\parskip}{0pt}
-\setlength{\parsep}{0pt}
-
-\begin{multicols}{3}
-  \item Portuguese (BR) \hfill \twonotes
-  \item English (US)    \hfill \twonotes
-\end{multicols}
-
-\begin{multicols}{3}
-  \item C          \hfill \threenotes 
-  \item Lua        \hfill \threenotes
-  \item Python     \hfill \twonotes
-  \item Java       \hfill \twonotes
-  \item JavaScript \hfill \twonotes
-  \item Go         \hfill \onenote
-  \item nesC       \hfill \onenote
- \end{multicols}
-
-\begin{multicols}{3}
-  \item nginx      \hfill \twonotes
-  \item OpenResty  \hfill \twonotes
-  \item Apache     \hfill \onenote
-  \item GAE        \hfill \twonotes
-  \item AWS (EC2)  \hfill \onenote
-  \item SQL        \hfill \onenote
-  \item MySQL      \hfill \onenote
-  \item PostgreSQL \hfill \onenote
-  \item SQLite     \hfill \onenote
-  \item HBase      \hfill \onenote
-  \item Redis      \hfill \onenote
-\end{multicols}
-
-\begin{multicols}{3}
-  \item FreeBSD   \hfill \twonotes
-  \item NetBSD    \hfill \twonotes
-  \item GNU/Linux \hfill \threenotes
-  \item Android   \hfill \onenote
-  \item TinyOS    \hfill \onenote
-\end{multicols}
-
-\begin{multicols}{3}
-  \item Vagrant \hfill \twonotes
-  \item Git     \hfill \twonotes
-  \item GitHub  \hfill \twonotes
-  \item GitLab  \hfill \twonotes
-  \item SVN     \hfill \onenote
-  \item CVS     \hfill \onenote
-\end{multicols}
-
-\begin{multicols}{3}
-  \item HTML/CSS   \hfill \twonotes
-  \item Bootstrap  \hfill \onenote
-  \item jQuery     \hfill \onenote
-  \item Knockout   \hfill \onenote
-\end{multicols}
-
-\end{itemize}
-
-\vspace{1em}
-
-\begin{center}
-\parbox[c]{8cm}{
-  \onenote Familiar; small-scale projects \\
-  \twonotes Quite familiar; used in larger projects \\
-  \threenotes Extensive knowledge
-}
-\end{center}
 
 \end{document}
