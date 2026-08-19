@@ -1,5 +1,7 @@
 # CV
 
+> Moved to [`gszr/gszr`](https://github.com/gszr/gszr/tree/main/cv). This repository is archived.
+
 Source lives in `src/`.
 
 Generated outputs live in `files/`:
